@@ -1,0 +1,9 @@
+identifier = identifier_first_char identifier_next_char*;
+identifier_first_char = is_alpha | '_';
+identifier_next_char = identifier_first_char | is_digit;
+space = is_space+;
+ysymbol = quote any quote;
+ykeyword = dquote identifier dquote;
+symbol = any;
+line_comment = '/' '/' line_comment_char* line_comment_end;
+block_comment = '/' '*' block_comment_char* '*' '/';
