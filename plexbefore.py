@@ -13,3 +13,11 @@ quote = C("'")
 dquote = C('"')
 
 remove_types = ["space", "line_comment", "block_comment"]
+
+make_token_identifier = make_token("identifier")
+make_token_ysymbol = make_token("ysymbol")
+make_token_ykeyword = make_token("ykeyword")
+make_token_space = make_token("space")
+make_token_line_comment = make_token("line_comment")
+make_token_block_comment = make_token("block_comment")
+make_token_symbol = make_token("symbol")
