@@ -84,7 +84,7 @@ def parse_yacc(tokens):
     pzero = lambda r: ["Z({})".format(flatten(r)[0])]
     pmore = lambda r: ["M({})".format(flatten(r)[0])]
     poptional = lambda r: ["O({})".format(flatten(r)[0])]
-    pskip = lambda r: [r[1]]
+    pskip = lambda r: [flatten(r)[1]]
     pcollect = lambda r: flatten(r)
 
     def pjoin(r):
